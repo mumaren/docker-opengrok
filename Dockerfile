@@ -16,7 +16,7 @@ ENV SRC_ROOT /src
 ENV OPENGROK_TOMCAT_BASE /usr/local/tomcat
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
-ENV PATH /OpenGrok-0.12.1.5/bin:$PATH
+ENV PATH /opengrok-0.12.1.5/bin:$PATH
 
 ENV CATALINA_BASE /usr/local/tomcat
 ENV CATALINA_HOME /usr/local/tomcat
@@ -25,7 +25,7 @@ ENV JRE_HOME /usr
 ENV CLASSPATH /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar
 
 WORKDIR $CATALINA_HOME
-RUN /OpenGrok-0.12.1.5/bin/OpenGrok deploy
+RUN /opengrok-0.12.1.5/bin/OpenGrok deploy
 
 EXPOSE 8080
 ADD scripts /scripts

@@ -16,7 +16,7 @@ ENV SRC_ROOT /src
 ENV OPENGROK_TOMCAT_BASE /usr/local/tomcat
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
-ENV PATH /opengrok-0.12.1.5/bin:$PATH
+ENV PATH /OpenGrok-0.12.1.5/bin:$PATH
 
 ENV CATALINA_BASE /usr/local/tomcat
 ENV CATALINA_HOME /usr/local/tomcat

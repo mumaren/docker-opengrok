@@ -25,7 +25,7 @@ ENV JRE_HOME /usr
 ENV CLASSPATH /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar
 
 WORKDIR $CATALINA_HOME
-RUN /opengrok-0.12.1.5/bin/OpenGrok deploy
+RUN /OpenGrok-0.12.1.5/bin/OpenGrok deploy
 
 EXPOSE 8080
 ADD scripts /scripts

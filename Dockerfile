@@ -8,6 +8,10 @@ RUN wget "http://ftp.us.debian.org/debian/pool/main/e/exuberant-ctags/exuberant-
 RUN tar zxvf /tmp/opengrok-0.12.1.5.tar.gz -C /
 RUN dpkg -i /tmp/exuberant-ctags_5.9-svn20110310-8_amd64.deb
 
+RUN apt-get update && \
+    apt-get install -y git && \
+    apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 ENV SRC_ROOT /src
 ENV OPENGROK_TOMCAT_BASE /usr/local/tomcat
 ENV CATALINA_HOME /usr/local/tomcat
